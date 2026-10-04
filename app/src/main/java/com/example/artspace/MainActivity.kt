@@ -77,7 +77,6 @@ fun ArtworkDescriptor(title: String, artist: String, year: String) {
     }
 }
 
-// Section 3: display controller
 @Composable
 fun DisplayController(onPrevious: () -> Unit, onNext: () -> Unit) {
     Row(
@@ -99,14 +98,14 @@ fun ArtSpaceApp() {
         else -> R.drawable.art3
     }
     val title = when (id) {
-        1 -> "Still Life of Blue Rose and Other Flowers"
-        2 -> "Second Title"
-        else -> "Third Title"
+        1 -> "Farmer"
+        2 -> "Trees"
+        else -> "Fall tree"
     }
     val artist = when (id) {
-        1 -> "Owen Scott"
-        2 -> "Artist Two"
-        else -> "Artist Three"
+        1 -> "Salim "
+        2 -> "Sarra"
+        else -> "Sami"
     }
     val year = when (id) {
         1 -> "2021"
